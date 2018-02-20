@@ -13,6 +13,8 @@ app.use(bodyparser.json({ extended: true }));
 app.use("/users", require("./routes/user-routes"));
 
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://172.17.0.2/APIAuth");
+if (process.env.NODE_ENV === "test")
+  mongoose.connect("mongodb://172.17.0.2/APIAuthTest");
+else mongoose.connect("mongodb://172.17.0.2/APIAuth");
 
 module.exports = app;
