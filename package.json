@@ -20,7 +20,7 @@
     "nodemon": "^1.15.1"
   },
   "scripts": {
-    "start-dev": "nodemon app.js",
-    "start": "node app.js"
+    "start-dev": "nodemon index.js",
+    "start": "node index.js"
   }
 }

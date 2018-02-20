@@ -1,4 +1,5 @@
 node_modules/
+server/node_modules/
 yarn.lock
-yarn-errors.log
-configs/keys.js
+yarn-error.log
+server/configs/keys.js
