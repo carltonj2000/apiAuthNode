@@ -3,3 +3,5 @@ server/node_modules/
 yarn.lock
 yarn-error.log
 server/configs/keys.js
+.nyc_output/
+__tests__/report/

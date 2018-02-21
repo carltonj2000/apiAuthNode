@@ -40,7 +40,7 @@ describe("Users routes", () => {
     // newer versions of mocha waits for pending async to finish before exiting
     // below needed because mongoose keeps the connection open after close
     // can also use --exit cli option to force exit after test are run
-    process.exit();
+    //process.exit(); // commented out because kills followon test prematurely
   });
 
   describe("signup", () => {

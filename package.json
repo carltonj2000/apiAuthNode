@@ -23,7 +23,10 @@
     "faker": "^4.1.0",
     "mocha": "^5.0.1",
     "nodemon": "^1.15.1",
-    "nyc": "^11.4.1"
+    "nyc": "^11.4.1",
+    "rewire": "^3.0.2",
+    "sinon": "^4.3.0",
+    "sinon-chai": "^2.14.0"
   },
   "scripts": {
     "start-dev": "cross-env NODE_ENV=prod nodemon index.js",

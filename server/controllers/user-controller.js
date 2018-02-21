@@ -19,7 +19,6 @@ module.exports = {
     const { email, password } = req.value.body;
 
     const foundUser = await User.findOne({ email });
-
     if (foundUser) {
       return res.status(403).json({ error: "Email is already used." });
     }
