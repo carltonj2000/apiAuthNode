@@ -19,4 +19,14 @@ Router.route("/secret").get(
   UserController.secret
 );
 
+Router.route("/oauth/google").post(
+  passport.authenticate("googleToken", { session: false }),
+  UserController.googleOauth
+);
+
+Router.route("/oauth/facebook").post(
+  passport.authenticate("facebookToken", { session: false }),
+  UserController.facebookOauth
+);
+
 module.exports = Router;
